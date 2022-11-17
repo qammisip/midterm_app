@@ -17,6 +17,6 @@ echo "EXPOSE 5050" >> tempdir/Dockerfile
 echo "CMD python3 /home/myapp/design_app.py" >> tempdir/Dockerfile
 
 cd tempdir
-docker build -t designprojapp .
-docker run -t -d -p 5050:5050 --name designprojrun designprojapp
+docker build -t midtermprojapp .
+docker run -t -d -p 5050:5050 --name midtermprojapp midtermprojapp
 docker ps -a
